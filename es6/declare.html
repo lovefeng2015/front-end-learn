@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // for (var i = 0; i < 5; i++) {
+        // }
+        // console.log(i);//5 说明for循环每次执行一个块级作用域{var i=0}，{var i=1}，{var i=2}
+
+        // for (var j = 0; j < 5; j++) {
+        //     var a=8;
+        // }
+        // console.log(a);//8
+        // for (var j = 0; j < 5; j++) {
+        //     var a=j;
+        // }
+        // console.log(a);//4  在每次执行循环体之前，JS 引擎会把 j 在循环体的上下文中重新声明及初始化一次
+        // for (var m = 0; m < 5; m++) {
+        //     var m=m;
+        //    // var a=j;
+        // }
+        //console.log(m);//5
+        //   for (var i = 0; i < 5; i++) {
+        //       let i=5;
+        // }
+        // console.log(i);//5
+
+        // for (var i = 0; i < 5; i++) {
+
+        //       let i=i;
+        // }
+        // console.log(i);//error,说明花括号内部是一个作用域，小括号外面是一个作用域，外面的作用域包括里面的作用域
+        // for (let i = 0; i < 5; i++) {
+
+        //     var a=i;
+        // }
+        // console.log(i);//error,说明i是块级作用域
+        // for (let i = 0; i < 5; i++) {
+        //     setTimeout(() => {
+        //         console.log(i);//0,1,2,3,4,说明for循环每次执行一个块级作用域{let i=0}，{let i=1}，{let i=2}
+        //     }, 1);
+        // }
+        // for (let i = 0; i < 5; i++) {
+        //     var m=i;
+        //     setTimeout(() => {
+        //         console.log(m);//4,4,4,4
+        //     }, 1);
+        // }
+        for (let i = 0; i < 5; i++) {
+            let m=i;
+            setTimeout(() => {
+                console.log(m);//0,1,2,3,4
+            }, 1);
+        }
+        
+    </script>
+
+</body>
+
+</html>

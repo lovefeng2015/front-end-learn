@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>当我们遇到了要快速判断一个元素是否出现集合里的时候，就要考虑哈希法了。</title>
+<script>
+    var replaceFileName=function (name) {
+    function upperCase(match,p1) {
+        return p1.toUpperCase(p1)
+    }
+    return name.replace(/-(\w)/g,upperCase)
+}
+function getFileName(){
+    let fileName=document.getElementById('file-name').value;
+	document.getElementById("demo").innerHTML=replaceFileName(fileName);
+}
+function clearContent(){
+	document.getElementById("file-name").value='';
+}
+</script>
+</head>
+<body>
+<div><input type="text" name="filename" id="file-name"></div>
+<p>单击按钮触发函数。</p>
+<button onclick="getFileName()">转化</button><button onclick="clearContent()" style="display: inline-block;margin-left: 20px;">清空</button>
+<p id="demo"></p>
+
+</body>
+</html>

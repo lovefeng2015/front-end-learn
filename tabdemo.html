@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>tabs</title>
+    <link rel="stylesheet" href="css/tab.css">
+    <script src="javascript/tab.js"></script>
+    <script type="text/javascript">
+       window.addEventListener("load",function () {
+        tabs.set("nav","menu_con");//执行
+       }),false
+    </script>
+</head>
+
+<body>
+    <div id="menu">
+        <!--tag标题-->
+        <ul id="nav">
+            <li><a href="#" class="selected">jQuery特效</a></li>
+            <li><a href="#" class="">tab切换</a></li>
+            <li><a href="#" class="">菜单导航</a></li>
+        </ul>
+        <!--二级菜单-->
+        <div id="menu_con">
+            <div class="tag" style="display:block">
+                这里是jQuery特效内容列表,测试git
+            </div>
+            <div class="tag" style="display:none">
+                这里是tab切换效果
+            </div>
+            <div class="tag" style="display:none">
+                这里是菜单导航效果
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

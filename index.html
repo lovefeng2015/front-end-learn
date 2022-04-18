@@ -1,0 +1,65 @@
+<!--
+ * @Author: your name
+ * @Date: 2021-09-10 11:37:44
+ * @LastEditTime: 2021-12-25 20:29:02
+ * @LastEditors: your name
+ * @Description: 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+ * @FilePath: \workspaces\plugins\index.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="javascript/basic.js"></script>
+</head>
+<body>
+<div>测试函数</div>
+<button type="button" class="clickBtn">点击我</button>
+<div id="mask">
+    <p class="title">提示</p>
+    <p>
+        <span class="area-content">这是一个弹框</span>
+        <a href="javascript:;">跳转</a>
+    </p>
+    <ul>
+        <li>1</li>
+        <li>1</li>
+        <li>1</li>
+        <li>1</li>
+        <li>1</li>
+    </ul>
+</div>
+<script type="text/javascript">
+    document.querySelector('.clickBtn').addEventListener('click', () => {
+        document.querySelector('#mask').style.display = 'block';
+       // window.addEventListener('click', hides, false);
+        setTimeout(() => {
+            window.addEventListener('click', hides, false);
+        }, 0);
+    });
+    function hides(e) {
+        console.log("asdf");
+        document.querySelector('#mask').style.display = 'none';
+        window.removeEventListener('click', hides, false);
+    }
+
+    document.querySelector('#mask').addEventListener('click', e => {
+        e.stopPropagation();
+    });
+//     var liList = document.querySelectorAll('li') // 共5个li
+// for( var i=0; i<liList.length; i++){
+//   liList[i].onclick = function(){
+//     console.log(i);
+//   }
+// }
+var liList = document.querySelectorAll('li') // 共5个li
+for( let i=0; i<liList.length; i++){
+  liList[i].onclick = function(){
+    console.log(i)
+  }
+}
+</script>
+
+</body>
+</html>

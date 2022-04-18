@@ -1,0 +1,27 @@
+/*
+* @Author: Administrator
+* @Date:   2016-03-14 10:55:40
+* @Last Modified by:   Administrator
+* @Last Modified time: 2016-04-22 19:46:10
+*/
+
+
+/**
+ *
+ */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+body {
+
+    font: 13px/1.25 'Helvetica Neue',Helvetica,Arial,sans-serif;
+
+}

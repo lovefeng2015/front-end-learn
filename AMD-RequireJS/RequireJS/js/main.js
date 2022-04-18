@@ -1,0 +1,22 @@
+(function(){
+    requirejs.config({
+        //baseUrl:'js/lib',//基本路径,出发点在根目录
+        baseUrl:'js/',
+        paths:{//配置路径
+            //app:'../app'
+            dataService:'./modules/dataService',
+            alerter:'./modules/alerter',
+            jquery:'./libs/jquery-1.10.1',//支持AMD，内部定义为小写
+            angular:'./libs/angular'//需要额外配置
+        },
+        shim:{
+            angular:{
+                exports:'angular'
+            }
+        }
+    })
+    requirejs(['alerter','angular'],function(alerter,angular){
+        alerter.showMsg();
+        console.log(angular);
+    })
+})()

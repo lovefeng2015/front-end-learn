@@ -1,0 +1,121 @@
+@charset "UTF-8";
+/**
+ *
+ * @authors  ()
+ * @date    2016-04-22
+ * @version $Id$
+ */
+.box{
+  margin: 0 auto;
+  width: 33%;
+  white-space: normal;
+}
+.clearfix{
+  zoom:1;
+}
+.Wow-bw {
+    word-wrap: break-word;
+}
+.Divided-h>li:first-child {
+     border-top: 0;
+}
+.Divided-h>li {
+    border-top-color: rgba(0,0,0,0.15);
+}
+.Divided-h .Py-10 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.Cf:after, .Cf:before {
+    content: " ";
+    display: table;
+}
+#Stencil .Ov-h {
+    overflow: hidden;
+    zoom: 1;
+}
+
+#Stencil .Mend-10 {
+    margin-right: 10px;
+}
+#Stencil .My-2 {
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+#Stencil .Fl-start {
+    float: left;
+    _display: inline;
+}
+#Stencil img {
+    border: 0;
+    vertical-align: bottom;
+    -ms-interpolation-mode: bicubic;
+}
+#Stencil .Bfc {
+    overflow: hidden;
+    zoom: 1;
+}
+#Stream .Lh-115 {
+    line-height: 1.15;
+}
+#Stencil .Mb-2 {
+    margin-bottom: 2px;
+}
+#Stencil .Fw-b {
+    font-weight: 700;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+#Stencil .Fz-m {
+    font-size: 15px;
+    /* font-size: 1.5rem; */
+}
+
+#Stencil .LineClamp{
+    -webkit-line-clamp: 2;
+}
+
+#Stencil .LineClamp {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    font-size: 13px;
+    line-height: 1.25;
+}
+#Stencil .LineClamp{
+    max-height: 3.25rem;
+}
+#Stencil .Ov-h {
+    overflow: hidden;
+    zoom: 1;
+}
+
+#Stencil .D-ib {
+    display: inline-block;
+    zoom: 1;
+}
+#Stencil .Fz-xs {
+    font-size: 11px;
+
+}
+#Stencil .Lhh-13 {
+    line-height: 1.3em;
+        height: 1.3em;
+}
+#Stencil .Whs-nw {
+    white-space: nowrap;
+}
+#Stencil .Mend-6 {
+    margin-right: 6px;
+}
+#Stencil .Source {
+    color: #1e7d8e!important;
+}
+.LineClamp {
+    letter-spacing: normal;
+    text-rendering: auto;
+    word-spacing: normal;
+}
+.Cf:after {
+    clear: both;
+}

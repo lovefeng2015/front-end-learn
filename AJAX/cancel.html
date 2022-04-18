@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>取消请求</title>
+</head>
+<body>
+    <button id="btn-send">点击发送</button>
+    <button id="btn-cancel">点击取消</button>
+    <script>
+        const btn_send=document.getElementById('btn-send');
+        const btn_cancel=document.querySelector('#btn-cancel');
+        let x=null;
+        btn_send.onclick=function(){
+            x=new XMLHttpRequest();
+            x.open('GET','http://127.0.0.1:8000/delay');
+            x.send();
+           
+        }
+        btn_cancel.onclick=function(){
+            x.abort();
+        }
+    </script>
+</body>
+</html>
